@@ -1,0 +1,949 @@
+// Redis Source Relation Graph
+digraph {
+	"config.c" [label="config.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "config.c"
+	"cluster.h" [label="cluster.h"]
+	"cluster.h" -> "config.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "config.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "config.c"
+	"lolwut.c" [label="lolwut.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "lolwut.c"
+	"t_list.c" [label="t_list.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "t_list.c"
+	"rio.c" [label="rio.c"]
+	"fmacros.h" [label="fmacros.h"]
+	"fmacros.h" -> "rio.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "rio.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "rio.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "rio.c"
+	"rio.h" [label="rio.h"]
+	"rio.h" -> "rio.c"
+	"util.h" [label="util.h"]
+	"util.h" -> "rio.c"
+	"crc64.h" [label="crc64.h"]
+	"crc64.h" -> "rio.c"
+	"config.h" [label="config.h"]
+	"config.h" -> "rio.c"
+	"server.h" [label="server.h"]
+	"server.h" -> "rio.c"
+	"crc16.c" [label="crc16.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "crc16.c"
+	"ae_epoll.c" [label="ae_epoll.c"]
+	"sys/epoll.h" [label="sys/epoll.h"]
+	"sys/epoll.h" -> "ae_epoll.c"
+	"geohash.c" [label="geohash.c"]
+	"geohash.h" [label="geohash.h"]
+	"geohash.h" -> "geohash.c"
+	"module.c" [label="module.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "module.c"
+	"cluster.h" [label="cluster.h"]
+	"cluster.h" -> "module.c"
+	"dlfcn.h" [label="dlfcn.h"]
+	"dlfcn.h" -> "module.c"
+	"redismodule.h" [label="redismodule.h"]
+	"redismodule.h" -> "module.c"
+	"ae_select.c" [label="ae_select.c"]
+	"sys/select.h" [label="sys/select.h"]
+	"sys/select.h" -> "ae_select.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "ae_select.c"
+	"expire.c" [label="expire.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "expire.c"
+	"t_stream.c" [label="t_stream.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "t_stream.c"
+	"endianconv.h" [label="endianconv.h"]
+	"endianconv.h" -> "t_stream.c"
+	"stream.h" [label="stream.h"]
+	"stream.h" -> "t_stream.c"
+	"defrag.c" [label="defrag.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "defrag.c"
+	"time.h" [label="time.h"]
+	"time.h" -> "defrag.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "defrag.c"
+	"stddef.h" [label="stddef.h"]
+	"stddef.h" -> "defrag.c"
+	"replication.c" [label="replication.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "replication.c"
+	"cluster.h" [label="cluster.h"]
+	"cluster.h" -> "replication.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "replication.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "replication.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "replication.c"
+	"sys/socket.h" [label="sys/socket.h"]
+	"sys/socket.h" -> "replication.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "replication.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "replication.c"
+	"multi.c" [label="multi.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "multi.c"
+	"syncio.c" [label="syncio.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "syncio.c"
+	"sentinel.c" [label="sentinel.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "sentinel.c"
+	"hiredis.h" [label="hiredis.h"]
+	"hiredis.h" -> "sentinel.c"
+	"async.h" [label="async.h"]
+	"async.h" -> "sentinel.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "sentinel.c"
+	"arpa/inet.h" [label="arpa/inet.h"]
+	"arpa/inet.h" -> "sentinel.c"
+	"sys/socket.h" [label="sys/socket.h"]
+	"sys/socket.h" -> "sentinel.c"
+	"sys/wait.h" [label="sys/wait.h"]
+	"sys/wait.h" -> "sentinel.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "sentinel.c"
+	"pubsub.c" [label="pubsub.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "pubsub.c"
+	"hyperloglog.c" [label="hyperloglog.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "hyperloglog.c"
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "hyperloglog.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "hyperloglog.c"
+	"redis-check-rdb.c" [label="redis-check-rdb.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "redis-check-rdb.c"
+	"rdb.h" [label="rdb.h"]
+	"rdb.h" -> "redis-check-rdb.c"
+	"stdarg.h" [label="stdarg.h"]
+	"stdarg.h" -> "redis-check-rdb.c"
+	"notify.c" [label="notify.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "notify.c"
+	"lzf_c.c" [label="lzf_c.c"]
+	"lzfP.h" [label="lzfP.h"]
+	"lzfP.h" -> "lzf_c.c"
+	"localtime.c" [label="localtime.c"]
+	"time.h" [label="time.h"]
+	"time.h" -> "localtime.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "localtime.c"
+	"rdb.c" [label="rdb.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "rdb.c"
+	"lzf.h    /* LZF compression library */" [label="lzf.h    /* LZF compression library */"]
+	"lzf.h    /* LZF compression library */" -> "rdb.c"
+	"zipmap.h" [label="zipmap.h"]
+	"zipmap.h" -> "rdb.c"
+	"endianconv.h" [label="endianconv.h"]
+	"endianconv.h" -> "rdb.c"
+	"stream.h" [label="stream.h"]
+	"stream.h" -> "rdb.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "rdb.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "rdb.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "rdb.c"
+	"sys/resource.h" [label="sys/resource.h"]
+	"sys/resource.h" -> "rdb.c"
+	"sys/wait.h" [label="sys/wait.h"]
+	"sys/wait.h" -> "rdb.c"
+	"arpa/inet.h" [label="arpa/inet.h"]
+	"arpa/inet.h" -> "rdb.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "rdb.c"
+	"sys/param.h" [label="sys/param.h"]
+	"sys/param.h" -> "rdb.c"
+	"debug.c" [label="debug.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "debug.c"
+	"sha1.h   /* SHA1 is used for DEBUG DIGEST */" [label="sha1.h   /* SHA1 is used for DEBUG DIGEST */"]
+	"sha1.h   /* SHA1 is used for DEBUG DIGEST */" -> "debug.c"
+	"crc64.h" [label="crc64.h"]
+	"crc64.h" -> "debug.c"
+	"arpa/inet.h" [label="arpa/inet.h"]
+	"arpa/inet.h" -> "debug.c"
+	"signal.h" [label="signal.h"]
+	"signal.h" -> "debug.c"
+	"dlfcn.h" [label="dlfcn.h"]
+	"dlfcn.h" -> "debug.c"
+	"execinfo.h" [label="execinfo.h"]
+	"execinfo.h" -> "debug.c"
+	"ucontext.h" [label="ucontext.h"]
+	"ucontext.h" -> "debug.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "debug.c"
+	"bio.h" [label="bio.h"]
+	"bio.h" -> "debug.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "debug.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "debug.c"
+	"bitops.c" [label="bitops.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "bitops.c"
+	"ae_kqueue.c" [label="ae_kqueue.c"]
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "ae_kqueue.c"
+	"sys/event.h" [label="sys/event.h"]
+	"sys/event.h" -> "ae_kqueue.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "ae_kqueue.c"
+	"ziplist.c" [label="ziplist.c"]
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "ziplist.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "ziplist.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "ziplist.c"
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "ziplist.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "ziplist.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "ziplist.c"
+	"util.h" [label="util.h"]
+	"util.h" -> "ziplist.c"
+	"ziplist.h" [label="ziplist.h"]
+	"ziplist.h" -> "ziplist.c"
+	"endianconv.h" [label="endianconv.h"]
+	"endianconv.h" -> "ziplist.c"
+	"redisassert.h" [label="redisassert.h"]
+	"redisassert.h" -> "ziplist.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "ziplist.c"
+	"adlist.h" [label="adlist.h"]
+	"adlist.h" -> "ziplist.c"
+	"sds.h" [label="sds.h"]
+	"sds.h" -> "ziplist.c"
+	"t_string.c" [label="t_string.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "t_string.c"
+	"math.h /* isnan(), isinf() */" [label="math.h /* isnan(), isinf() */"]
+	"math.h /* isnan(), isinf() */" -> "t_string.c"
+	"sds.c" [label="sds.c"]
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "sds.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "sds.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "sds.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "sds.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "sds.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "sds.c"
+	"sds.h" [label="sds.h"]
+	"sds.h" -> "sds.c"
+	"sdsalloc.h" [label="sdsalloc.h"]
+	"sdsalloc.h" -> "sds.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "sds.c"
+	"testhelp.h" [label="testhelp.h"]
+	"testhelp.h" -> "sds.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "sds.c"
+	"anet.c" [label="anet.c"]
+	"fmacros.h" [label="fmacros.h"]
+	"fmacros.h" -> "anet.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "anet.c"
+	"sys/socket.h" [label="sys/socket.h"]
+	"sys/socket.h" -> "anet.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "anet.c"
+	"sys/un.h" [label="sys/un.h"]
+	"sys/un.h" -> "anet.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "anet.c"
+	"netinet/in.h" [label="netinet/in.h"]
+	"netinet/in.h" -> "anet.c"
+	"netinet/tcp.h" [label="netinet/tcp.h"]
+	"netinet/tcp.h" -> "anet.c"
+	"arpa/inet.h" [label="arpa/inet.h"]
+	"arpa/inet.h" -> "anet.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "anet.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "anet.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "anet.c"
+	"netdb.h" [label="netdb.h"]
+	"netdb.h" -> "anet.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "anet.c"
+	"stdarg.h" [label="stdarg.h"]
+	"stdarg.h" -> "anet.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "anet.c"
+	"anet.h" [label="anet.h"]
+	"anet.h" -> "anet.c"
+	"setproctitle.c" [label="setproctitle.c"]
+	"stddef.h	/* NULL size_t */" [label="stddef.h	/* NULL size_t */"]
+	"stddef.h	/* NULL size_t */" -> "setproctitle.c"
+	"stdarg.h	/* va_list va_start va_end */" [label="stdarg.h	/* va_list va_start va_end */"]
+	"stdarg.h	/* va_list va_start va_end */" -> "setproctitle.c"
+	"stdlib.h	/* malloc(3) setenv(3) clearenv(3) setproctitle(3) getprogname(3) */" [label="stdlib.h	/* malloc(3) setenv(3) clearenv(3) setproctitle(3) getprogname(3) */"]
+	"stdlib.h	/* malloc(3) setenv(3) clearenv(3) setproctitle(3) getprogname(3) */" -> "setproctitle.c"
+	"stdio.h	/* vsnprintf(3) snprintf(3) */" [label="stdio.h	/* vsnprintf(3) snprintf(3) */"]
+	"stdio.h	/* vsnprintf(3) snprintf(3) */" -> "setproctitle.c"
+	"string.h	/* strlen(3) strchr(3) strdup(3) memset(3) memcpy(3) */" [label="string.h	/* strlen(3) strchr(3) strdup(3) memset(3) memcpy(3) */"]
+	"string.h	/* strlen(3) strchr(3) strdup(3) memset(3) memcpy(3) */" -> "setproctitle.c"
+	"errno.h	/* errno program_invocation_name program_invocation_short_name */" [label="errno.h	/* errno program_invocation_name program_invocation_short_name */"]
+	"errno.h	/* errno program_invocation_name program_invocation_short_name */" -> "setproctitle.c"
+	"util.c" [label="util.c"]
+	"fmacros.h" [label="fmacros.h"]
+	"fmacros.h" -> "util.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "util.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "util.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "util.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "util.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "util.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "util.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "util.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "util.c"
+	"float.h" [label="float.h"]
+	"float.h" -> "util.c"
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "util.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "util.c"
+	"time.h" [label="time.h"]
+	"time.h" -> "util.c"
+	"util.h" [label="util.h"]
+	"util.h" -> "util.c"
+	"sha1.h" [label="sha1.h"]
+	"sha1.h" -> "util.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "util.c"
+	"zipmap.c" [label="zipmap.c"]
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "zipmap.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "zipmap.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "zipmap.c"
+	"endianconv.h" [label="endianconv.h"]
+	"endianconv.h" -> "zipmap.c"
+	"release.c" [label="release.c"]
+	"string.h" [label="string.h"]
+	"string.h" -> "release.c"
+	"release.h" [label="release.h"]
+	"release.h" -> "release.c"
+	"version.h" [label="version.h"]
+	"version.h" -> "release.c"
+	"crc64.h" [label="crc64.h"]
+	"crc64.h" -> "release.c"
+	"cluster.c" [label="cluster.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "cluster.c"
+	"cluster.h" [label="cluster.h"]
+	"cluster.h" -> "cluster.c"
+	"endianconv.h" [label="endianconv.h"]
+	"endianconv.h" -> "cluster.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "cluster.c"
+	"sys/socket.h" [label="sys/socket.h"]
+	"sys/socket.h" -> "cluster.c"
+	"arpa/inet.h" [label="arpa/inet.h"]
+	"arpa/inet.h" -> "cluster.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "cluster.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "cluster.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "cluster.c"
+	"sys/file.h" [label="sys/file.h"]
+	"sys/file.h" -> "cluster.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "cluster.c"
+	"childinfo.c" [label="childinfo.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "childinfo.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "childinfo.c"
+	"listpack.c" [label="listpack.c"]
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "listpack.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "listpack.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "listpack.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "listpack.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "listpack.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "listpack.c"
+	"listpack.h" [label="listpack.h"]
+	"listpack.h" -> "listpack.c"
+	"listpack_malloc.h" [label="listpack_malloc.h"]
+	"listpack_malloc.h" -> "listpack.c"
+	"lolwut5.c" [label="lolwut5.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "lolwut5.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "lolwut5.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "lolwut5.c"
+	"redis-benchmark.c" [label="redis-benchmark.c"]
+	"fmacros.h" [label="fmacros.h"]
+	"fmacros.h" -> "redis-benchmark.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "redis-benchmark.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "redis-benchmark.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "redis-benchmark.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "redis-benchmark.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "redis-benchmark.c"
+	"time.h" [label="time.h"]
+	"time.h" -> "redis-benchmark.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "redis-benchmark.c"
+	"signal.h" [label="signal.h"]
+	"signal.h" -> "redis-benchmark.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "redis-benchmark.c"
+	"sds.h /* Use hiredis sds. */" [label="sds.h /* Use hiredis sds. */"]
+	"sds.h /* Use hiredis sds. */" -> "redis-benchmark.c"
+	"ae.h" [label="ae.h"]
+	"ae.h" -> "redis-benchmark.c"
+	"hiredis.h" [label="hiredis.h"]
+	"hiredis.h" -> "redis-benchmark.c"
+	"adlist.h" [label="adlist.h"]
+	"adlist.h" -> "redis-benchmark.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "redis-benchmark.c"
+	"lazyfree.c" [label="lazyfree.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "lazyfree.c"
+	"bio.h" [label="bio.h"]
+	"bio.h" -> "lazyfree.c"
+	"atomicvar.h" [label="atomicvar.h"]
+	"atomicvar.h" -> "lazyfree.c"
+	"cluster.h" [label="cluster.h"]
+	"cluster.h" -> "lazyfree.c"
+	"bio.c" [label="bio.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "bio.c"
+	"bio.h" [label="bio.h"]
+	"bio.h" -> "bio.c"
+	"endianconv.c" [label="endianconv.c"]
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "endianconv.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "endianconv.c"
+	"sparkline.c" [label="sparkline.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "sparkline.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "sparkline.c"
+	"pqsort.c" [label="pqsort.c"]
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "pqsort.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "pqsort.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "pqsort.c"
+	"t_zset.c" [label="t_zset.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "t_zset.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "t_zset.c"
+	"lzf_d.c" [label="lzf_d.c"]
+	"lzfP.h" [label="lzfP.h"]
+	"lzfP.h" -> "lzf_d.c"
+	"object.c" [label="object.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "object.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "object.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "object.c"
+	"server.c" [label="server.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "server.c"
+	"cluster.h" [label="cluster.h"]
+	"cluster.h" -> "server.c"
+	"slowlog.h" [label="slowlog.h"]
+	"slowlog.h" -> "server.c"
+	"bio.h" [label="bio.h"]
+	"bio.h" -> "server.c"
+	"latency.h" [label="latency.h"]
+	"latency.h" -> "server.c"
+	"atomicvar.h" [label="atomicvar.h"]
+	"atomicvar.h" -> "server.c"
+	"time.h" [label="time.h"]
+	"time.h" -> "server.c"
+	"signal.h" [label="signal.h"]
+	"signal.h" -> "server.c"
+	"sys/wait.h" [label="sys/wait.h"]
+	"sys/wait.h" -> "server.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "server.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "server.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "server.c"
+	"stdarg.h" [label="stdarg.h"]
+	"stdarg.h" -> "server.c"
+	"arpa/inet.h" [label="arpa/inet.h"]
+	"arpa/inet.h" -> "server.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "server.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "server.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "server.c"
+	"sys/resource.h" [label="sys/resource.h"]
+	"sys/resource.h" -> "server.c"
+	"sys/uio.h" [label="sys/uio.h"]
+	"sys/uio.h" -> "server.c"
+	"sys/un.h" [label="sys/un.h"]
+	"sys/un.h" -> "server.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "server.c"
+	"float.h" [label="float.h"]
+	"float.h" -> "server.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "server.c"
+	"sys/resource.h" [label="sys/resource.h"]
+	"sys/resource.h" -> "server.c"
+	"sys/utsname.h" [label="sys/utsname.h"]
+	"sys/utsname.h" -> "server.c"
+	"locale.h" [label="locale.h"]
+	"locale.h" -> "server.c"
+	"sys/socket.h" [label="sys/socket.h"]
+	"sys/socket.h" -> "server.c"
+	"asciilogo.h" [label="asciilogo.h"]
+	"asciilogo.h" -> "server.c"
+	"networking.c" [label="networking.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "networking.c"
+	"atomicvar.h" [label="atomicvar.h"]
+	"atomicvar.h" -> "networking.c"
+	"sys/socket.h" [label="sys/socket.h"]
+	"sys/socket.h" -> "networking.c"
+	"sys/uio.h" [label="sys/uio.h"]
+	"sys/uio.h" -> "networking.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "networking.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "networking.c"
+	"intset.c" [label="intset.c"]
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "intset.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "intset.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "intset.c"
+	"intset.h" [label="intset.h"]
+	"intset.h" -> "intset.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "intset.c"
+	"endianconv.h" [label="endianconv.h"]
+	"endianconv.h" -> "intset.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "intset.c"
+	"time.h" [label="time.h"]
+	"time.h" -> "intset.c"
+	"redis-cli.c" [label="redis-cli.c"]
+	"fmacros.h" [label="fmacros.h"]
+	"fmacros.h" -> "redis-cli.c"
+	"version.h" [label="version.h"]
+	"version.h" -> "redis-cli.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "redis-cli.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "redis-cli.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "redis-cli.c"
+	"signal.h" [label="signal.h"]
+	"signal.h" -> "redis-cli.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "redis-cli.c"
+	"time.h" [label="time.h"]
+	"time.h" -> "redis-cli.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "redis-cli.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "redis-cli.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "redis-cli.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "redis-cli.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "redis-cli.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "redis-cli.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "redis-cli.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "redis-cli.c"
+	"hiredis.h" [label="hiredis.h"]
+	"hiredis.h" -> "redis-cli.c"
+	"sds.h /* use sds.h from hiredis, so that only one set of sds functions will be present in the binary */" [label="sds.h /* use sds.h from hiredis, so that only one set of sds functions will be present in the binary */"]
+	"sds.h /* use sds.h from hiredis, so that only one set of sds functions will be present in the binary */" -> "redis-cli.c"
+	"dict.h" [label="dict.h"]
+	"dict.h" -> "redis-cli.c"
+	"adlist.h" [label="adlist.h"]
+	"adlist.h" -> "redis-cli.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "redis-cli.c"
+	"linenoise.h" [label="linenoise.h"]
+	"linenoise.h" -> "redis-cli.c"
+	"help.h" [label="help.h"]
+	"help.h" -> "redis-cli.c"
+	"anet.h" [label="anet.h"]
+	"anet.h" -> "redis-cli.c"
+	"ae.h" [label="ae.h"]
+	"ae.h" -> "redis-cli.c"
+	"t_set.c" [label="t_set.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "t_set.c"
+	"blocked.c" [label="blocked.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "blocked.c"
+	"rand.c" [label="rand.c"]
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "rand.c"
+	"slowlog.c" [label="slowlog.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "slowlog.c"
+	"slowlog.h" [label="slowlog.h"]
+	"slowlog.h" -> "slowlog.c"
+	"sort.c" [label="sort.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "sort.c"
+	"pqsort.h /* Partial qsort for SORT+LIMIT */" [label="pqsort.h /* Partial qsort for SORT+LIMIT */"]
+	"pqsort.h /* Partial qsort for SORT+LIMIT */" -> "sort.c"
+	"math.h /* isnan() */" [label="math.h /* isnan() */"]
+	"math.h /* isnan() */" -> "sort.c"
+	"dict.c" [label="dict.c"]
+	"fmacros.h" [label="fmacros.h"]
+	"fmacros.h" -> "dict.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "dict.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "dict.c"
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "dict.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "dict.c"
+	"stdarg.h" [label="stdarg.h"]
+	"stdarg.h" -> "dict.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "dict.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "dict.c"
+	"dict.h" [label="dict.h"]
+	"dict.h" -> "dict.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "dict.c"
+	"redisassert.h" [label="redisassert.h"]
+	"redisassert.h" -> "dict.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "dict.c"
+	"sds.h" [label="sds.h"]
+	"sds.h" -> "dict.c"
+	"zmalloc.c" [label="zmalloc.c"]
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "zmalloc.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "zmalloc.c"
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "zmalloc.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "zmalloc.c"
+	"pthread.h" [label="pthread.h"]
+	"pthread.h" -> "zmalloc.c"
+	"config.h" [label="config.h"]
+	"config.h" -> "zmalloc.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "zmalloc.c"
+	"atomicvar.h" [label="atomicvar.h"]
+	"atomicvar.h" -> "zmalloc.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "zmalloc.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "zmalloc.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "zmalloc.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "zmalloc.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "zmalloc.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "zmalloc.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "zmalloc.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "zmalloc.c"
+	"sys/sysctl.h" [label="sys/sysctl.h"]
+	"sys/sysctl.h" -> "zmalloc.c"
+	"mach/task.h" [label="mach/task.h"]
+	"mach/task.h" -> "zmalloc.c"
+	"mach/mach_init.h" [label="mach/mach_init.h"]
+	"mach/mach_init.h" -> "zmalloc.c"
+	"ae_evport.c" [label="ae_evport.c"]
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "ae_evport.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "ae_evport.c"
+	"port.h" [label="port.h"]
+	"port.h" -> "ae_evport.c"
+	"poll.h" [label="poll.h"]
+	"poll.h" -> "ae_evport.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "ae_evport.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "ae_evport.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "ae_evport.c"
+	"latency.c" [label="latency.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "latency.c"
+	"adlist.c" [label="adlist.c"]
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "adlist.c"
+	"adlist.h" [label="adlist.h"]
+	"adlist.h" -> "adlist.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "adlist.c"
+	"db.c" [label="db.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "db.c"
+	"cluster.h" [label="cluster.h"]
+	"cluster.h" -> "db.c"
+	"atomicvar.h" [label="atomicvar.h"]
+	"atomicvar.h" -> "db.c"
+	"signal.h" [label="signal.h"]
+	"signal.h" -> "db.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "db.c"
+	"t_hash.c" [label="t_hash.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "t_hash.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "t_hash.c"
+	"geohash_helper.c" [label="geohash_helper.c"]
+	"fmacros.h" [label="fmacros.h"]
+	"fmacros.h" -> "geohash_helper.c"
+	"geohash_helper.h" [label="geohash_helper.h"]
+	"geohash_helper.h" -> "geohash_helper.c"
+	"debugmacro.h" [label="debugmacro.h"]
+	"debugmacro.h" -> "geohash_helper.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "geohash_helper.c"
+	"redis-check-aof.c" [label="redis-check-aof.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "redis-check-aof.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "redis-check-aof.c"
+	"aof.c" [label="aof.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "aof.c"
+	"bio.h" [label="bio.h"]
+	"bio.h" -> "aof.c"
+	"rio.h" [label="rio.h"]
+	"rio.h" -> "aof.c"
+	"signal.h" [label="signal.h"]
+	"signal.h" -> "aof.c"
+	"fcntl.h" [label="fcntl.h"]
+	"fcntl.h" -> "aof.c"
+	"sys/stat.h" [label="sys/stat.h"]
+	"sys/stat.h" -> "aof.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "aof.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "aof.c"
+	"sys/resource.h" [label="sys/resource.h"]
+	"sys/resource.h" -> "aof.c"
+	"sys/wait.h" [label="sys/wait.h"]
+	"sys/wait.h" -> "aof.c"
+	"sys/param.h" [label="sys/param.h"]
+	"sys/param.h" -> "aof.c"
+	"quicklist.c" [label="quicklist.c"]
+	"string.h /* for memcpy */" [label="string.h /* for memcpy */"]
+	"string.h /* for memcpy */" -> "quicklist.c"
+	"quicklist.h" [label="quicklist.h"]
+	"quicklist.h" -> "quicklist.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "quicklist.c"
+	"ziplist.h" [label="ziplist.h"]
+	"ziplist.h" -> "quicklist.c"
+	"util.h /* for ll2string */" [label="util.h /* for ll2string */"]
+	"util.h /* for ll2string */" -> "quicklist.c"
+	"lzf.h" [label="lzf.h"]
+	"lzf.h" -> "quicklist.c"
+	"stdio.h /* for printf (debug printing), snprintf (genstr) */" [label="stdio.h /* for printf (debug printing), snprintf (genstr) */"]
+	"stdio.h /* for printf (debug printing), snprintf (genstr) */" -> "quicklist.c"
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "quicklist.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "quicklist.c"
+	"siphash.c" [label="siphash.c"]
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "siphash.c"
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "siphash.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "siphash.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "siphash.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "siphash.c"
+	"ae.c" [label="ae.c"]
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "ae.c"
+	"sys/time.h" [label="sys/time.h"]
+	"sys/time.h" -> "ae.c"
+	"sys/types.h" [label="sys/types.h"]
+	"sys/types.h" -> "ae.c"
+	"unistd.h" [label="unistd.h"]
+	"unistd.h" -> "ae.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "ae.c"
+	"poll.h" [label="poll.h"]
+	"poll.h" -> "ae.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "ae.c"
+	"time.h" [label="time.h"]
+	"time.h" -> "ae.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "ae.c"
+	"ae.h" [label="ae.h"]
+	"ae.h" -> "ae.c"
+	"zmalloc.h" [label="zmalloc.h"]
+	"zmalloc.h" -> "ae.c"
+	"config.h" [label="config.h"]
+	"config.h" -> "ae.c"
+	"ae_evport.c" [label="ae_evport.c"]
+	"ae_evport.c" -> "ae.c"
+	"ae_epoll.c" [label="ae_epoll.c"]
+	"ae_epoll.c" -> "ae.c"
+	"ae_kqueue.c" [label="ae_kqueue.c"]
+	"ae_kqueue.c" -> "ae.c"
+	"ae_select.c" [label="ae_select.c"]
+	"ae_select.c" -> "ae.c"
+	"evict.c" [label="evict.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "evict.c"
+	"bio.h" [label="bio.h"]
+	"bio.h" -> "evict.c"
+	"atomicvar.h" [label="atomicvar.h"]
+	"atomicvar.h" -> "evict.c"
+	"geo.c" [label="geo.c"]
+	"geo.h" [label="geo.h"]
+	"geo.h" -> "geo.c"
+	"geohash_helper.h" [label="geohash_helper.h"]
+	"geohash_helper.h" -> "geo.c"
+	"debugmacro.h" [label="debugmacro.h"]
+	"debugmacro.h" -> "geo.c"
+	"rax.c" [label="rax.c"]
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "rax.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "rax.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "rax.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "rax.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "rax.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "rax.c"
+	"rax.h" [label="rax.h"]
+	"rax.h" -> "rax.c"
+	RAX_MALLOC_INCLUDE [label=RAX_MALLOC_INCLUDE]
+	RAX_MALLOC_INCLUDE -> "rax.c"
+	"crc64.c" [label="crc64.c"]
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "crc64.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "crc64.c"
+	"scripting.c" [label="scripting.c"]
+	"server.h" [label="server.h"]
+	"server.h" -> "scripting.c"
+	"sha1.h" [label="sha1.h"]
+	"sha1.h" -> "scripting.c"
+	"rand.h" [label="rand.h"]
+	"rand.h" -> "scripting.c"
+	"cluster.h" [label="cluster.h"]
+	"cluster.h" -> "scripting.c"
+	"lua.h" [label="lua.h"]
+	"lua.h" -> "scripting.c"
+	"lauxlib.h" [label="lauxlib.h"]
+	"lauxlib.h" -> "scripting.c"
+	"lualib.h" [label="lualib.h"]
+	"lualib.h" -> "scripting.c"
+	"ctype.h" [label="ctype.h"]
+	"ctype.h" -> "scripting.c"
+	"math.h" [label="math.h"]
+	"math.h" -> "scripting.c"
+	"sha1.c" [label="sha1.c"]
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "sha1.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "sha1.c"
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "sha1.c"
+	"solarisfixes.h" [label="solarisfixes.h"]
+	"solarisfixes.h" -> "sha1.c"
+	"sha1.h" [label="sha1.h"]
+	"sha1.h" -> "sha1.c"
+	"config.h" [label="config.h"]
+	"config.h" -> "sha1.c"
+	"memtest.c" [label="memtest.c"]
+	"stdint.h" [label="stdint.h"]
+	"stdint.h" -> "memtest.c"
+	"stdlib.h" [label="stdlib.h"]
+	"stdlib.h" -> "memtest.c"
+	"stdio.h" [label="stdio.h"]
+	"stdio.h" -> "memtest.c"
+	"string.h" [label="string.h"]
+	"string.h" -> "memtest.c"
+	"assert.h" [label="assert.h"]
+	"assert.h" -> "memtest.c"
+	"limits.h" [label="limits.h"]
+	"limits.h" -> "memtest.c"
+	"errno.h" [label="errno.h"]
+	"errno.h" -> "memtest.c"
+	"termios.h" [label="termios.h"]
+	"termios.h" -> "memtest.c"
+	"sys/ioctl.h" [label="sys/ioctl.h"]
+	"sys/ioctl.h" -> "memtest.c"
+	"stropts.h" [label="stropts.h"]
+	"stropts.h" -> "memtest.c"
+	"config.h" [label="config.h"]
+	"config.h" -> "memtest.c"
+}
