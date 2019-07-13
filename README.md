@@ -1,6 +1,12 @@
 # 利用Python协助解读C/C++程序源码
 
-## 0.导语
+## 关于作者
+
+微信公众号：
+
+![](./img/wechat.jpg)
+
+## 导语
 
 终于更新一个小的python项目来一起动手学习了，今天想看看Redis源码，可惜太慢太多，思维太乱，于是想到看是否用Python可以分析出这个源码直接的依赖关系。
 
@@ -30,7 +36,7 @@
 
 > https://github.com/Light-City/PyLookSrcRelation
 
-## 1.支持的功能
+## 支持的功能
 
 目前支持如下功能：
 
@@ -92,6 +98,4 @@ python pylsr.py -d 'test.cpp' -o 'png'
 python pylsr.py -d 'redis-cli.c' -i -o 'svg'
 ```
 ![svgfile](./img/svgfile.png)
-
-## 2.实现原理
 
